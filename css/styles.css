@@ -49,6 +49,20 @@ html {
   box-sizing: inherit;
 }
 
+.button {
+  margin: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+  line-height: 18.75px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--green);
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -77,6 +91,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
 
 
 /* MAIN-CONTENT */
@@ -123,4 +138,49 @@ main {
   color: var(--text-color0);
   text-transform: uppercase;
   text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  padding: 116px 0 249px;
+  background-color: var(--wheat);
+  background-image:url("../img/coffee-bg-img.jpg");
+  background-repeat: no-repeat;
+  background-position:left calc(50% + 365px) top;
+  background-size: 710px 696px ;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 464px;
+  margin: 0 150px auto;
+}
+
+.hero-content-title {
+  margin: 0 0 24px;
+  padding: 0;
+  font-size: 64px;
+  line-height: 75px;
+  font-weight: 700;
+  color: var(--text-color1);
+}
+
+.hero-content-text {
+  margin: 0 0 34px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--text-color1);
+}
+
+.hero-img-stam {
+  position: absolute;
+  transform: rotate(-25deg);
+  z-index: 1;
+  top: 49px;
+  left: calc(50% + -55px);
+  border-radius: 100%;
 }
