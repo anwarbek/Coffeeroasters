@@ -83,3 +83,44 @@ img {
 main {
   flex-grow: 1;
 }
+
+/* HEADER */
+.site-header {
+  background-color: var(--wheat);
+  margin: 0;
+  padding: 0;
+}
+
+.header-item {
+  flex-wrap: wrap;
+  margin: 0 50px;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+}
+
+.sitenav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.sitenav-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.sitenav-list-item-link {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  color: var(--text-color0);
+  text-transform: uppercase;
+  text-decoration: none;
+}
