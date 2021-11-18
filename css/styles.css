@@ -49,6 +49,11 @@ html {
   box-sizing: inherit;
 }
 
+*:focus {
+  outline: 2px dashed var(--text-color0);
+  outline-offset: 3px;
+}
+
 .button {
   margin: 0;
   padding: 16px 24px;
@@ -132,8 +137,8 @@ main {
 }
 
 .sitenav-list-item-link {
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 18.75px;
   font-weight: 700;
   color: var(--text-color0);
   text-transform: uppercase;
@@ -183,4 +188,67 @@ main {
   top: 49px;
   left: calc(50% + -55px);
   border-radius: 100%;
+}
+
+
+/* FOOTER */
+.site-footer {
+  background-color: var(--wheat);
+  margin: 0;
+  padding: 0;
+}
+
+.footer-item {
+  flex-wrap: wrap;
+  margin: 0 50px;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: flex;
+}
+
+.sitenav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.sitenav-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.sitenav-list-item-link {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color: var(--text-color0);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.social-list-item-link {
+  display: block;
+}
+
+.social-list-item-link-img {
+  display: flex;
+  align-items: center;
 }
