@@ -2,7 +2,7 @@
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
-      url("../fonts/Roboto-Bold.woff") format("woff");
+  url("../fonts/Roboto-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -11,7 +11,7 @@
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
-      url("../fonts/Roboto-Regular.woff") format("woff");
+  url("../fonts/Roboto-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -20,7 +20,7 @@
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
-      url("../fonts/Roboto-Medium.woff") format("woff");
+  url("../fonts/Roboto-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -191,6 +191,83 @@ main {
 }
 
 
+/* COLUMN-1 */
+.column-1 {
+  margin: 20px 0;
+  padding: 0 20px;
+  background: url(../img/column-2-bg.png);
+  background-repeat: repeat-Y;
+}
+
+.column2-header {
+  margin: 0;
+  padding: 50px 0 80px;
+  font-size: 50px;
+  line-height: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.product-lists-block {
+  margin: 0 auto;
+  padding: 0 0 70px;
+  width: 100%;
+  max-width: 1114px;
+}
+
+.product-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.product-list-item:nth-child(even){
+  justify-content: flex-end;
+}
+
+.product-list-item-info:not(:last-child) {
+  margin: 0 117px 0 0;
+}
+
+.product-list-item-img {
+  width: 450px;
+  height: 375px;
+}
+
+.product-list-item-info-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 391px;
+  margin: 0;
+  padding: 0;
+}
+
+.product-list-item-info-link {
+  text-decoration: none;
+}
+
+.product-list-item-info-title {
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 500;
+  color: var(--text-color0);
+}
+
+.product-list-item-info-text {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 400;
+  color: var(--text-color0);
+}
+
+
 /* FOOTER */
 .site-footer {
   background-color: var(--wheat);
@@ -236,6 +313,7 @@ main {
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
   list-style: none;
   text-decoration: none;
 }
